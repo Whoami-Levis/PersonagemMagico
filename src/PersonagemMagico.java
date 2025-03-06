@@ -5,15 +5,16 @@ public class PersonagemMagico {
 
     int nivelEnergia;
 
-    String Poder;
+    String poderMagico;
 
     //Criação do Construtor
-    public PersonagemMagico ( String nome , int nivelEnergia , String Poder ) {
+    public PersonagemMagico ( String nome , int nivelEnergia , String poderMagico ) {
         this.nome = nome;
         this.nivelEnergia = nivelEnergia;
-        this.Poder = Poder;
-
+        this.poderMagico = poderMagico;
     }
+    public PersonagemMagico(){}
 }
+
 
 

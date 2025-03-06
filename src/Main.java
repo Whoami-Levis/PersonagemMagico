@@ -4,13 +4,13 @@ public class Main {
         PersonagemMagico mago = new PersonagemMagico("Gandalf", 100, "Magia");
 
         //Exibindo valores dos atributos do objeto (Mago)
-        System.out.println(mago.nome + " - Energia:" + mago.nivelEnergia + " - Poder:" + mago.Poder);
+        System.out.println(mago.nome + " - Energia:" + mago.nivelEnergia + " - Poder:" + mago.poderMagico);
 
         //Criado novo personagem magico (Elfo)
-        PersonagemMagico elfo = new PersonagemMagico("Elfo", 100, "Arqueiro");
+        PersonagemMagico elfo = new PersonagemMagico("Elfo", 100,"Elfo");
 
 
         //Imprimindo os valores do persdnagem (Elfo)
-        System.out.println(elfo.nome + " - Energia:" + elfo.nivelEnergia + " - Poder:" + elfo.Poder);
+        System.out.println(elfo.nome + " - Energia:" + elfo.nivelEnergia + " - Poder:" + elfo.poderMagico);
     }
 }
