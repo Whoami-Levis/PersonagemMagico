@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        PersonagemMagico personagem = new PersonagemMagico();
+        PersonagemMagico personagem = new PersonagemMagico()
         int op;
         do {
             System.out.println("\tEscolha uma Opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n0 - Sair");
@@ -22,9 +22,17 @@ public class Menu {
                     personagem.nivelEnergia = energia;
                     break;
                 case 2:
-                    System.out.println();
+                    System.out.println("Nome: " + personagem.nome + " | Poder: " + personagem.poderMagico + " | Energia: " + personagem.nivelEnergia);
+                    break;
+                case 0:
+                    System.out.println("Finalizando Programa");
+                    break;
+                default:
             }
 
-        }
+
+        }while (op != 0);
+        sc.close();
     }
 }
+1
